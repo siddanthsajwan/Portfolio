@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Mail, Phone, MapPin, Send, Copy, Check, Clock, Sparkles, MessageSquare, ArrowRight } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Copy, Check, Clock, Sparkles, MessageSquare, ArrowRight, Code2 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { portfolioData } from '../data/portfolioData';
 
@@ -143,6 +143,36 @@ export default function Contact({ onNotify }) {
               >
                 {copiedField === 'Phone' ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
               </button>
+            </div>
+
+            {/* LeetCode Card */}
+            <div className="purple-card p-5 flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="p-2.5 rounded-xl bg-purple-950/70 border border-purple-500/30 text-amber-400 shadow-[0_0_10px_rgba(245,158,11,0.2)]">
+                  <Code2 className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-xs text-purple-400/80 block">LeetCode Profile</span>
+                  <a
+                    href={portfolioData.personal.socialLinks.leetcode}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-xs sm:text-sm font-semibold text-white hover:text-amber-300 transition flex items-center gap-1.5"
+                  >
+                    <span>leetcode.com/u/siddanthsajwan4</span>
+                  </a>
+                </div>
+              </div>
+
+              <a
+                href={portfolioData.personal.socialLinks.leetcode}
+                target="_blank"
+                rel="noreferrer"
+                className="p-2 rounded-full hover:bg-purple-900/50 text-purple-300 hover:text-amber-300 transition"
+                title="Open LeetCode Profile"
+              >
+                <ArrowRight className="w-4 h-4" />
+              </a>
             </div>
 
             {/* Location & Timezone Card */}

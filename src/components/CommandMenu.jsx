@@ -46,6 +46,16 @@ export default function CommandMenu({ isOpen, onClose, onOpenResume, onNotify })
       }
     },
     {
+      id: 'leetcode',
+      title: 'Open LeetCode Profile (@siddanthsajwan4)',
+      icon: <Code2 className="w-4 h-4 text-amber-400" />,
+      category: 'Social & Profiles',
+      run: () => {
+        window.open(portfolioData.personal.socialLinks.leetcode, '_blank');
+        onClose(false);
+      }
+    },
+    {
       id: 'confetti',
       title: 'Trigger Celebratory Confetti',
       icon: <Sparkles className="w-4 h-4 text-amber-400" />,

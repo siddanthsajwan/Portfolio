@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowUpRight, FileText, Terminal, Sparkles, Send } from 'lucide-react';
+import { Menu, X, ArrowUpRight, FileText, Terminal, Sparkles, Send, Code2 } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 export default function Navbar({ onOpenResume, onOpenCommandMenu }) {
@@ -98,6 +98,16 @@ export default function Navbar({ onOpenResume, onOpenCommandMenu }) {
 
           {/* Right CTAs */}
           <div className="hidden sm:flex items-center gap-2.5">
+            <a
+              href={portfolioData.personal.socialLinks.leetcode}
+              target="_blank"
+              rel="noreferrer"
+              className="p-2 rounded-full hover:bg-purple-900/40 text-purple-300 hover:text-amber-300 border border-purple-500/20 transition"
+              title="LeetCode Profile (@siddanthsajwan4)"
+            >
+              <Code2 className="w-4 h-4" />
+            </a>
+
             <button
               onClick={() => onOpenCommandMenu(true)}
               className="p-2 rounded-full hover:bg-purple-900/40 text-purple-300 hover:text-white border border-purple-500/20 transition"

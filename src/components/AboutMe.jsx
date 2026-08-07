@@ -125,7 +125,16 @@ export default function AboutMe({ onLaunchSimulator, onOpenResume }) {
               </p>
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center justify-center sm:justify-end gap-3">
+              <a
+                href={portfolioData.personal.socialLinks.leetcode}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 px-3 py-2 rounded-xl bg-purple-950/60 hover:bg-purple-900/80 border border-purple-500/30 hover:border-amber-400/50 text-xs text-purple-200 hover:text-amber-300 transition shadow-[0_0_10px_rgba(245,158,11,0.1)]"
+              >
+                <Code2 className="w-4 h-4 text-amber-400" />
+                <span>LeetCode</span>
+              </a>
               <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-purple-950/60 border border-purple-500/30 text-xs text-purple-200">
                 <Trophy className="w-4 h-4 text-amber-400" />
                 <span>Graphethon Finalist</span>

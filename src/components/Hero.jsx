@@ -1,19 +1,25 @@
 import React from 'react';
-import { ArrowUpRight, Bot, Sparkles, Github, Linkedin, Mail, FileText, Code2, MapPin, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ArrowUpRight, Bot, Sparkles, Github, Linkedin, Mail, FileText, Code2, MapPin, ArrowRight, CheckCircle2, ExternalLink } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 export default function Hero({ onOpenResume, onNotify }) {
   const techPills = [
     { name: 'CrewAI Flows', icon: '🤖' },
-    { name: 'Groq (Llama 3.1)', icon: '⚡' },
+    { name: 'Groq (Llama 3.1 8B)', icon: '⚡' },
     { name: 'React.js', icon: '⚛️' },
     { name: 'Google Gemini 1.5', icon: '✨' },
-    { name: 'Docker', icon: '🐳' },
+    { name: 'Docker Containers', icon: '🐳' },
     { name: 'ProElevate Intern', icon: '💼' },
     { name: 'Tailwind CSS', icon: '🎨' },
     { name: 'Python & FastAPI', icon: '🐍' },
+    { name: 'LeetCode Problem Solving', icon: '💻' },
     { name: 'GEHU B.Tech CSE', icon: '🎓' },
+    { name: 'Autonomous Agent Pipelines', icon: '🧠' },
+    { name: 'REST & IMAP/SMTP Tools', icon: '📬' },
   ];
+
+  // Duplicate for seamless infinite marquee loop
+  const marqueePills = [...techPills, ...techPills];
 
   return (
     <section id="hero" className="relative pt-28 sm:pt-36 pb-16 overflow-hidden">
@@ -30,12 +36,27 @@ export default function Hero({ onOpenResume, onNotify }) {
           {/* Left Column: Bold Display Typography (8 cols) */}
           <div className="lg:col-span-8 space-y-8">
             
-            {/* Availability Pill */}
-            <div className="inline-flex items-center gap-2 purple-pill purple-pill-glow">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_#34d399]" />
-              <span className="text-xs font-semibold text-purple-200 tracking-wide uppercase">
-                Available for 2026 Roles & Internships
-              </span>
+            {/* Top Badges Row */}
+            <div className="flex flex-wrap items-center gap-2.5">
+              <div className="inline-flex items-center gap-2 purple-pill purple-pill-glow">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_#34d399]" />
+                <span className="text-xs font-semibold text-purple-200 tracking-wide uppercase">
+                  Available for 2026 Roles & Internships
+                </span>
+              </div>
+
+              {/* Prominent LeetCode Profile Badge */}
+              <a
+                href={portfolioData.personal.socialLinks.leetcode}
+                target="_blank"
+                rel="noreferrer"
+                className="purple-pill bg-purple-950/60 hover:bg-purple-900/80 border-purple-500/30 hover:border-amber-400/60 text-xs font-medium text-purple-200 hover:text-amber-300 transition flex items-center gap-1.5 shadow-[0_0_12px_rgba(245,158,11,0.15)]"
+                title="View LeetCode Profile"
+              >
+                <Code2 className="w-3.5 h-3.5 text-amber-400" />
+                <span>LeetCode Profile</span>
+                <ExternalLink className="w-3 h-3 text-amber-400/80" />
+              </a>
             </div>
 
             {/* Giant Display Title */}
@@ -49,12 +70,13 @@ export default function Hero({ onOpenResume, onNotify }) {
             {/* Sub-text & Action Row */}
             <div className="grid grid-cols-1 sm:grid-cols-12 gap-6 items-end pt-4">
               
-              {/* Short Bio */}
+              {/* Short Bio & Action Buttons */}
               <div className="sm:col-span-7 space-y-4">
                 <p className="text-neutral-300 text-sm sm:text-base leading-relaxed">
                   Hi, I'm <strong className="text-white font-semibold">Siddanth Sajwan</strong>. A Computer Science undergraduate & AI Engineer specialized in autonomous multi-agent systems (<span className="text-purple-300 font-medium">CrewAI & Groq</span>) and high-performance frontend applications with experience at <span className="text-purple-300 font-medium">ProElevate</span>.
                 </p>
 
+                {/* CTA Buttons */}
                 <div className="flex flex-wrap items-center gap-3 pt-2">
                   <a
                     href="#projects"
@@ -70,6 +92,38 @@ export default function Hero({ onOpenResume, onNotify }) {
                   >
                     <Bot className="w-4 h-4 text-purple-400" />
                     <span>Run AI Simulator</span>
+                  </a>
+                </div>
+
+                {/* Social Profiles Row */}
+                <div className="flex items-center gap-2 pt-2 text-xs font-mono text-neutral-400">
+                  <span className="text-purple-400/70 mr-1">Profiles:</span>
+                  <a
+                    href={portfolioData.personal.socialLinks.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="p-2 rounded-full bg-purple-950/40 hover:bg-purple-900/60 text-purple-300 hover:text-white border border-purple-500/20 transition"
+                    title="GitHub"
+                  >
+                    <Github className="w-3.5 h-3.5" />
+                  </a>
+                  <a
+                    href={portfolioData.personal.socialLinks.linkedin}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="p-2 rounded-full bg-purple-950/40 hover:bg-purple-900/60 text-purple-300 hover:text-blue-300 border border-purple-500/20 transition"
+                    title="LinkedIn"
+                  >
+                    <Linkedin className="w-3.5 h-3.5" />
+                  </a>
+                  <a
+                    href={portfolioData.personal.socialLinks.leetcode}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="p-2 rounded-full bg-purple-950/40 hover:bg-purple-900/60 text-purple-300 hover:text-amber-300 border border-purple-500/20 transition"
+                    title="LeetCode (@siddanthsajwan4)"
+                  >
+                    <Code2 className="w-3.5 h-3.5" />
                   </a>
                 </div>
               </div>
@@ -137,22 +191,30 @@ export default function Hero({ onOpenResume, onNotify }) {
 
         </div>
 
-        {/* Tech Brand Pill Ticker */}
+        {/* Continuous Infinite Moving Core Competencies Marquee */}
         <div className="mt-16 pt-8 border-t border-purple-500/20">
-          <div className="text-[11px] font-mono uppercase tracking-wider text-purple-400/70 mb-4">
-            Core Competencies & Stack
+          <div className="flex items-center justify-between mb-4">
+            <div className="text-[11px] font-mono uppercase tracking-wider text-purple-400/70">
+              Core Competencies & Stack (Live Stream)
+            </div>
+            <span className="text-[10px] font-mono text-purple-400/50 hidden sm:inline">
+              Hover to pause
+            </span>
           </div>
           
-          <div className="flex items-center gap-2.5 overflow-x-auto pb-3 no-scrollbar">
-            {techPills.map((pill) => (
-              <div
-                key={pill.name}
-                className="purple-pill py-2 px-4 whitespace-nowrap bg-purple-950/40 border-purple-500/30 hover:border-purple-400/60 shadow-[0_4px_12px_rgba(0,0,0,0.3)] transition"
-              >
-                <span>{pill.icon}</span>
-                <span className="text-xs font-semibold text-purple-200">{pill.name}</span>
-              </div>
-            ))}
+          {/* Marquee Wrapper with side gradient masks */}
+          <div className="relative overflow-hidden w-full [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+            <div className="animate-marquee gap-3 py-1 flex items-center">
+              {marqueePills.map((pill, idx) => (
+                <div
+                  key={`${pill.name}-${idx}`}
+                  className="purple-pill py-2 px-4.5 whitespace-nowrap bg-purple-950/50 border-purple-500/30 hover:border-purple-400/80 hover:bg-purple-900/60 shadow-[0_4px_14px_rgba(0,0,0,0.3)] transition cursor-default flex items-center gap-2"
+                >
+                  <span className="text-sm">{pill.icon}</span>
+                  <span className="text-xs font-semibold text-purple-200">{pill.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 

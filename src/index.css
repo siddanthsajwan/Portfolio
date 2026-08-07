@@ -156,7 +156,7 @@
   box-shadow: 0 0 15px -3px rgba(168, 85, 247, 0.4);
 }
 
-/* 3D Purple Icon Container (like the reference icon) */
+/* 3D Purple Icon Container */
 .purple-3d-box {
   background: linear-gradient(135deg, #3b0764 0%, #1e0836 50%, #0d041a 100%);
   border: 1.5px solid rgba(192, 132, 252, 0.4);
@@ -183,6 +183,26 @@
   background: linear-gradient(135deg, #e9d5ff 0%, #c084fc 50%, #818cf8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Continuous Infinite Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }
 
 /* Animations */
