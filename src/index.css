@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #070314;
+    --bg-card: rgba(18, 10, 38, 0.75);
+    --border-card: rgba(168, 85, 247, 0.2);
+    --border-card-hover: rgba(192, 132, 252, 0.5);
+    --accent-purple: #9333ea;
+    --accent-violet: #7c3aed;
+    --accent-indigo: #6366f1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #070314;
+    color: #f3f4f6;
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background-color: #9333ea;
+    color: #ffffff;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #070314;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2e1065;
+    border-radius: 9999px;
+    border: 2px solid #070314;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6b21a8;
+  }
+}
+
+/* Cosmic purple gradient ambient mesh */
+.purple-ambient-bg {
+  background-color: #070314;
+  background-image: 
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(139, 92, 246, 0.28), transparent 70%),
+    radial-gradient(ellipse 60% 50% at 85% 30%, rgba(168, 85, 247, 0.18), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 15% 65%, rgba(99, 102, 241, 0.16), transparent 70%),
+    radial-gradient(ellipse 80% 60% at 50% 110%, rgba(147, 51, 234, 0.22), transparent 70%);
+  background-attachment: fixed;
+}
+
+/* Glowing Neon Borders and Cards */
+.purple-card {
+  background: rgba(18, 10, 38, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(168, 85, 247, 0.22);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 35px -5px rgba(10, 4, 25, 0.7), 0 0 30px -10px rgba(147, 51, 234, 0.12);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.purple-card:hover {
+  border-color: rgba(192, 132, 252, 0.5);
+  box-shadow: 0 16px 45px -5px rgba(10, 4, 25, 0.85), 0 0 45px -5px rgba(168, 85, 247, 0.25);
+  transform: translateY(-2px);
+}
+
+.purple-card-glow {
+  background: linear-gradient(145deg, rgba(28, 14, 58, 0.85), rgba(13, 7, 28, 0.9));
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(192, 132, 252, 0.35);
+  border-radius: 1.5rem;
+  box-shadow: 0 0 50px -10px rgba(147, 51, 234, 0.35), inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* Purple Pill Buttons */
+.purple-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.35rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #a855f7 0%, #7c3aed 50%, #6366f1 100%);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: -0.01em;
+  box-shadow: 0 0 25px -3px rgba(168, 85, 247, 0.5), inset 0 1px 1px 0 rgba(255, 255, 255, 0.3);
+  transition: all 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.purple-btn-primary:hover {
+  background: linear-gradient(135deg, #c084fc 0%, #9333ea 50%, #7c3aed 100%);
+  box-shadow: 0 0 35px 0 rgba(192, 132, 252, 0.7), inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+.purple-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 9999px;
+  background: rgba(30, 16, 60, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  color: #e9d5ff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: -0.01em;
+  transition: all 0.25s ease;
+}
+
+.purple-btn-outline:hover {
+  background: rgba(46, 24, 92, 0.8);
+  border-color: rgba(192, 132, 252, 0.7);
+  color: #ffffff;
+  box-shadow: 0 0 25px -5px rgba(168, 85, 247, 0.35);
+  transform: translateY(-1px);
+}
+
+/* Purple Pill Badge */
+.purple-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.85rem;
+  border-radius: 9999px;
+  background: rgba(46, 16, 101, 0.45);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  color: #d8b4fe;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.purple-pill-glow {
+  background: rgba(88, 28, 135, 0.4);
+  border: 1px solid rgba(216, 180, 254, 0.4);
+  color: #f3e8ff;
+  box-shadow: 0 0 15px -3px rgba(168, 85, 247, 0.4);
+}
+
+/* 3D Purple Icon Container (like the reference icon) */
+.purple-3d-box {
+  background: linear-gradient(135deg, #3b0764 0%, #1e0836 50%, #0d041a 100%);
+  border: 1.5px solid rgba(192, 132, 252, 0.4);
+  box-shadow: 
+    0 15px 35px -5px rgba(0, 0, 0, 0.8),
+    0 0 40px -5px rgba(147, 51, 234, 0.5),
+    inset 0 1px 2px 0 rgba(255, 255, 255, 0.25),
+    inset 0 -1px 2px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 1.75rem;
+}
+
+/* Typography styles */
+.font-display {
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #ffffff 0%, #f3e8ff 40%, #c084fc 80%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-neon {
+  background: linear-gradient(135deg, #e9d5ff 0%, #c084fc 50%, #818cf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 25px -5px rgba(168, 85, 247, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 45px 0 rgba(192, 132, 252, 0.7);
+  }
+}
+
+.animate-purple-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Utility hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
