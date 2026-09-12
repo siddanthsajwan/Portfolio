@@ -200,7 +200,7 @@ export const portfolioData = {
       description: "Certified in Generative AI architectures, foundation models, prompt tuning, Google Cloud Vertex AI, and enterprise generative AI solutions.",
       badgeColor: "from-blue-500 to-cyan-400",
       skills: ["Generative AI", "Vertex AI", "LLM Fine-Tuning", "Prompt Engineering"],
-      verificationUrl: "#"
+      verificationUrl: "https://drive.google.com/file/d/1qbtXt6xE7DhOP8Qpfkac1r-e65-lqxnB/view?usp=drive_link"
     },
     {
       id: "oracle-agentic",
@@ -211,7 +211,7 @@ export const portfolioData = {
       description: "Demonstrated expertise in building multi-agent AI systems, autonomous agent workflows, tool calling, and orchestrating enterprise LLM agents.",
       badgeColor: "from-amber-500 to-rose-500",
       skills: ["Agentic AI", "Multi-Agent Systems", "Tool Execution", "Autonomous Workflows"],
-      verificationUrl: "#"
+      verificationUrl: "https://drive.google.com/file/d/1B0DGq4g5sIh12M1o7iG5Nc8eDH5VQVk_/view?usp=drive_link"
     },
     {
       id: "graphethon-hackathon",
