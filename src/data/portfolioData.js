@@ -89,7 +89,6 @@ export const portfolioData = {
         metric3: "100% Automated IMAP/SMTP"
       },
       links: {
-        live: "https://agentic-email-responder.demo",
         github: "https://github.com/siddanthsajwan/Email-Auto-Responder"
       },
       badge: "Flagship AI Project"
@@ -117,7 +116,7 @@ export const portfolioData = {
         metric3: "PDF/JSON Export Ready"
       },
       links: {
-        live: "https://wanderlust-ai-planner.demo",
+        live: "https://ai-trip-planner-nine-rosy.vercel.app",
         github: "https://github.com/siddanthsajwan/Ai-Trip-Planner"
       },
       badge: "AI Web Application"
@@ -146,7 +145,7 @@ export const portfolioData = {
         metric3: "+40% Task Efficiency"
       },
       links: {
-        live: "https://productivity-dashboard.demo",
+        live: "https://task-manager-xi-ebon.vercel.app",
         github: "https://github.com/siddanthsajwan/Task-Manager"
       },
       badge: "High-Performance Web App"

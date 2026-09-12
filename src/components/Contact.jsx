@@ -159,7 +159,7 @@ export default function Contact({ onNotify }) {
                     rel="noreferrer"
                     className="text-xs sm:text-sm font-semibold text-white hover:text-amber-300 transition flex items-center gap-1.5"
                   >
-                    <span>leetcode.com/u/siddanthsajwan4</span>
+                    <span>leetcode.com/u/siddanthsajwan</span>
                   </a>
                 </div>
               </div>

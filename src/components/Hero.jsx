@@ -121,7 +121,7 @@ export default function Hero({ onOpenResume, onNotify }) {
                     target="_blank"
                     rel="noreferrer"
                     className="p-2 rounded-full bg-purple-950/40 hover:bg-purple-900/60 text-purple-300 hover:text-amber-300 border border-purple-500/20 transition"
-                    title="LeetCode (@siddanthsajwan4)"
+                    title="LeetCode (@siddanthsajwan)"
                   >
                     <Code2 className="w-3.5 h-3.5" />
                   </a>

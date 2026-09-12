@@ -103,7 +103,7 @@ export default function Navbar({ onOpenResume, onOpenCommandMenu }) {
               target="_blank"
               rel="noreferrer"
               className="p-2 rounded-full hover:bg-purple-900/40 text-purple-300 hover:text-amber-300 border border-purple-500/20 transition"
-              title="LeetCode Profile (@siddanthsajwan4)"
+              title="LeetCode Profile (@siddanthsajwan)"
             >
               <Code2 className="w-4 h-4" />
             </a>
