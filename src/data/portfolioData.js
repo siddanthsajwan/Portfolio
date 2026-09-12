@@ -11,7 +11,7 @@ export const portfolioData = {
     avatar: "/siddanth-profile.jpg",
     socialLinks: {
       github: "https://github.com/siddanthsajwan",
-      linkedin: "https://linkedin.com/in/siddanth-sajwan",
+      linkedin: "https://www.linkedin.com/in/siddanth-sajwan-971184261/",
       leetcode: "https://leetcode.com/u/Siddanthsajwan14/",
       email: "mailto:siddanthsajwan45@gmail.com"
     },
