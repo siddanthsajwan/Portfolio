@@ -47,7 +47,7 @@ export default function CommandMenu({ isOpen, onClose, onOpenResume, onNotify })
     },
     {
       id: 'leetcode',
-      title: 'Open LeetCode Profile (@siddanthsajwan)',
+      title: 'Open LeetCode Profile (@Siddanthsajwan14)',
       icon: <Code2 className="w-4 h-4 text-amber-400" />,
       category: 'Social & Profiles',
       run: () => {

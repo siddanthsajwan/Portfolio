@@ -12,7 +12,7 @@ export const portfolioData = {
     socialLinks: {
       github: "https://github.com/siddanthsajwan",
       linkedin: "https://linkedin.com/in/siddanth-sajwan",
-      leetcode: "https://leetcode.com/u/siddanthsajwan",
+      leetcode: "https://leetcode.com/u/Siddanthsajwan14/",
       email: "mailto:siddanthsajwan45@gmail.com"
     },
     stats: [
@@ -89,6 +89,7 @@ export const portfolioData = {
         metric3: "100% Automated IMAP/SMTP"
       },
       links: {
+        live: "https://email-auto-responder-1lli.onrender.com/",
         github: "https://github.com/siddanthsajwan/Email-Auto-Responder"
       },
       badge: "Flagship AI Project"
@@ -116,7 +117,7 @@ export const portfolioData = {
         metric3: "PDF/JSON Export Ready"
       },
       links: {
-        live: "https://ai-trip-planner-nine-rosy.vercel.app",
+        live: "https://ai-trip-planner-kappa-nine.vercel.app/",
         github: "https://github.com/siddanthsajwan/Ai-Trip-Planner"
       },
       badge: "AI Web Application"
@@ -145,7 +146,7 @@ export const portfolioData = {
         metric3: "+40% Task Efficiency"
       },
       links: {
-        live: "https://task-manager-xi-ebon.vercel.app",
+        live: "https://task-manager-xi-ebon.vercel.app/",
         github: "https://github.com/siddanthsajwan/Task-Manager"
       },
       badge: "High-Performance Web App"
