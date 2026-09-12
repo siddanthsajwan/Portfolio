@@ -10,7 +10,7 @@ export const portfolioData = {
     status: "Available for Full-time Roles & Internships (Graduating June 2026)",
     avatar: "/siddanth-profile.jpg",
     socialLinks: {
-      github: "https://github.com/siddanth-sajwan",
+      github: "https://github.com/siddanthsajwan",
       linkedin: "https://linkedin.com/in/siddanth-sajwan",
       leetcode: "https://leetcode.com/u/siddanthsajwan",
       email: "mailto:siddanthsajwan45@gmail.com"
@@ -48,9 +48,9 @@ export const portfolioData = {
       techStack: ["JavaScript", "React.js", "Tailwind CSS", "ShadCN UI", "React-Hook-Form", "Framer-motion", "Tremor"],
       summary: "Spearheaded core frontend features, user onboarding pipelines, and dynamic analytics dashboards for a high-growth platform during its pivotal beta launch.",
       bullets: [
-        "Built polished, production-grade UI and fluid micro-interactions across key user workflows using React.js, Tailwind CSS, ShadCN, and Framer-motion prioritizing visual hierarchy and design consistency.",
-        "Optimized the user registration pipeline and eliminated critical sign-up bugs, ensuring a seamless onboarding experience for more than 5,000 users during the beta launch phase.",
-        "Developed dynamic real-time analytics dashboards using Tremor chart components, enabling live monitoring of over 10 critical performance KPIs."
+        "Built polished, production grade UI and micro-interactions across key user workflows using React.js, Tailwind CSS and Framer-motion prioritizing visual hierarchy and design consistency.",
+        "Optimized the user registration pipeline and eliminated critical sign-up bugs ensuring a smooth on-boarding experience for more than 5000 users during the beta phase.",
+        "Developed dynamic dashboards using Tremor chart components enabling real-time KPIs covering over 10 critical performance metrics."
       ],
       metrics: [
         { label: "Users Handled", value: "5,000+" },
@@ -68,11 +68,11 @@ export const portfolioData = {
       featured: true,
       tagline: "Autonomous multi-agent system powered by CrewAI Flows & Groq Llama 3.1 8B",
       description: "An end-to-end autonomous Agentic AI system that orchestrates 3 specialized collaborative AI agents to automate email filtering, thread context analysis, and high-precision response drafting with real-world tool execution.",
-      techStack: ["Agentic AI", "CrewAI Flows", "Groq (Llama 3.1 8B)", "Multi-Agent Systems", "Python", "Docker", "uv", "IMAP/SMTP", "Render"],
+      techStack: ["Python", "CrewAI Flows", "LangChain", "Groq (Llama 3.1 8B)", "Gmail IMAP", "Docker", "uv", "Render"],
       bulletPoints: [
-        "Architected an end-to-end Agentic AI system using CrewAI Flows and Groq (Llama 3.1 8B), deploying 3 specialized collaborative AI agents to automate email filtering, context analysis, and drafting.",
-        "Equipped autonomous agents with custom Python tools (GetThreadTool, CreateDraftTool) to inspect thread history and execute real-world IMAP/SMTP actions in Gmail safely.",
-        "Containerized the multi-agent pipeline with Docker & uv, integrating a multi-threaded live health server deployed continuously on Render."
+        "Architected an Agentic AI system with CrewAI Flows and Groq’s Llama 3.1, orchestrating 3 agents to autonomously filter, analyze, and draft email responses.",
+        "Built custom LangChain tools enabling agents to autonomously read full email threads and create drafts directly via Gmail’s IMAP interface.",
+        "Containerized the system with Docker and uv, deploying a live multi-threaded health server on Render."
       ],
       architecture: {
         agents: [
@@ -90,7 +90,7 @@ export const portfolioData = {
       },
       links: {
         live: "https://agentic-email-responder.demo",
-        github: "https://github.com/siddanth-sajwan/autonomous-email-agent"
+        github: "https://github.com/siddanthsajwan/Email-Auto-Responder"
       },
       badge: "Flagship AI Project"
     },
@@ -101,11 +101,11 @@ export const portfolioData = {
       featured: true,
       tagline: "AI-powered personalized travel itinerary generator with local RAG & live mapping",
       description: "Intelligent travel itinerary generator combining Google Gemini 1.5 Flash with local RAG architecture for grounded, real-time travel recommendations, interactive route maps, and weather tracking.",
-      techStack: ["React 18", "Vite", "Google Gemini API (1.5 Flash)", "Local RAG", "Google Maps API", "Tailwind CSS", "Glassmorphism"],
+      techStack: ["React 18", "Vite", "Google Gemini API", "Vector RAG", "Google Maps API", "Open-Meteo API"],
       bulletPoints: [
-        "Architected an AI trip generator using Gemini 1.5 Flash and local RAG for grounded itineraries tailored to user budget, pace, and interests.",
-        "Integrated Google Maps API and live weather tracking to visualize interactive daily routes, waypoint stops, and destination forecasts.",
-        "Designed a responsive Glassmorphism UI featuring dark/light modes, interactive photo galleries, and 1-click PDF/JSON itinerary exports."
+        "Built an AI trip planner with Gemini 1.5 Flash and vector RAG for grounded itineraries.",
+        "Integrated Google Maps and Open-Meteo APIs for interactive routes and live weather tracking.",
+        "Designed a responsive Glassmorphism UI with dark mode, global state, and PDF/JSON exports."
       ],
       architecture: {
         aiModel: "Gemini 1.5 Flash with Grounded RAG Knowledge Base",
@@ -118,7 +118,7 @@ export const portfolioData = {
       },
       links: {
         live: "https://wanderlust-ai-planner.demo",
-        github: "https://github.com/siddanth-sajwan/wanderlust-ai-planner"
+        github: "https://github.com/siddanthsajwan/Ai-Trip-Planner"
       },
       badge: "AI Web Application"
     },
@@ -129,11 +129,11 @@ export const portfolioData = {
       featured: true,
       tagline: "High-performance task management & analytics suite with optimistic UI updates",
       description: "A fast, modern productivity dashboard with drag-and-drop Kanban state management, optimistic updates, and custom SVG analytics visualizing live performance metrics.",
-      techStack: ["React", "Node.js", "Express", "Tailwind CSS", "Custom SVG Charts", "Drag & Drop", "REST API"],
+      techStack: ["React", "Node.js", "Express", "Tailwind CSS"],
       bulletPoints: [
-        "Engineered frontend with optimistic updates, reducing perceived UI latency by 80% for all task CRUD operations.",
-        "Built a responsive analytics dashboard with custom SVG charts to visualize 5+ real-time productivity and completion metrics.",
-        "Implemented drag-and-drop state management with fluid feedback, improving task organization efficiency by 40%."
+        "Engineered frontend with optimistic updates, reducing perceived UI latency by 80% for CRUD operations.",
+        "Built an analytics dashboard with custom SVG charts to visualize 5+ real-time productivity metrics.",
+        "Implemented drag-and-drop state management, improving task organization efficiency by 40%."
       ],
       architecture: {
         performance: "Optimistic updates with background reconciliation",
@@ -147,7 +147,7 @@ export const portfolioData = {
       },
       links: {
         live: "https://productivity-dashboard.demo",
-        github: "https://github.com/siddanth-sajwan/productivity-dashboard"
+        github: "https://github.com/siddanthsajwan/Task-Manager"
       },
       badge: "High-Performance Web App"
     }
