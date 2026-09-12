@@ -6,10 +6,14 @@ export default function Certifications({ onNotify }) {
   const { certifications } = portfolioData;
 
   const handleViewCert = (cert) => {
-    onNotify({
-      message: `Verified Credential: ${cert.title} issued by ${cert.issuer}`,
-      type: 'info'
-    });
+    if (cert.verificationUrl && cert.verificationUrl !== "#") {
+      window.open(cert.verificationUrl, '_blank', 'noopener,noreferrer');
+    } else {
+      onNotify({
+        message: `Verified Credential: ${cert.title} issued by ${cert.issuer}`,
+        type: 'info'
+      });
+    }
   };
 
   return (
